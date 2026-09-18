@@ -1,46 +1,61 @@
-# Arush Mehta — Personal Portfolio
+# Ajay Kumar Yadav — Personal Portfolio & Engineering Showcase
 
-A fast, responsive, and minimalist personal portfolio built with Next.js (App Router), Tailwind CSS, and Framer Motion.
-Features dark mode by default and is fully data-driven via simple config files.
+A fast, responsive, and minimalist developer portfolio built with **Next.js 16 (App Router)**, **React 19**, **Tailwind CSS**, and **Framer Motion**.
+Features dark and light themes, smooth animations, and data-driven configuration files.
 
-**Live:** [https://arush-mehta-portfolio.vercel.app/](https://arush-mehta-portfolio.vercel.app/) <!-- update if URL differs -->
+[![GitHub](https://img.shields.io/badge/GitHub-ajaykumaryadav--collab-blue?logo=github)](https://github.com/ajaykumaryadav-collab)
+[![Repository](https://img.shields.io/badge/Repo-portfolio-emerald?logo=github)](https://github.com/ajaykumaryadav-collab/portfolio)
 
-## Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 | Layer | Technology |
 |---|---|
-| Framework | Next.js 16 (App Router) |
-| Styling | Tailwind CSS + Vanilla CSS variables |
+| Framework | Next.js 16 (App Router) + React 19 |
+| Styling | Tailwind CSS + Vanilla CSS Tokens |
 | Animations | Framer Motion |
 | Icons | Lucide React, React Icons |
-| Theme | Custom ThemeProvider (localStorage, no script injection) |
-| Deployment | Vercel |
+| Theme | Custom ThemeProvider (Light / Dark mode toggle) |
+| Language | TypeScript |
 
-## Data-Driven Content
+---
 
-All content lives in `src/data/` — no layout code changes needed:
+## 📂 Data-Driven Content
 
-| File | What it controls |
+All personal content and configurations live in `src/data/`:
+
+| File | Content |
 |---|---|
-| `profile.ts` | Name, tagline, bio, email, phone, GitHub, resume link |
-| `projects.ts` | Projects — status: `Featured`, `In Progress`, `Completed`, or `Coming Soon` |
-| `skills.ts` | Skill categories (Languages, Frameworks, Tools, Data & AI) + Currently Learning |
+| `profile.ts` | Name, role, tagline, bio, contact links, resume URL |
+| `projects.ts` | Projects metadata, problem statements, technical solutions, and repo links |
+| `experience.ts` | Robotics club involvement, technical teams, and education timeline |
+| `skills.ts` | Technical skills categories and topics currently being explored |
 
-## Projects Showcased
+---
 
-- **Tata Steel IoT Intelligence Dashboard** *(Featured — Internship)* — NL-to-SQL chatbot dashboard
-- **Pulse AI — India Edition** *(Completed)* — Real-time India-centric tech news feed
-- **Project Genesis** *(In Progress)* — AI-first Personal Media Companion
+## 🚀 Projects Showcased
 
-## Local Development
+- **Project JARVIS — Local Voice AI Desktop Assistant** *(Featured)* — Low-latency Windows 11 voice assistant using `openwakeword`, `faster-whisper` (CUDA), Gemini 2.0 Flash API, and `piper-tts`. [Repo](https://github.com/ajaykumaryadav-collab/jarvis)
+- **CredTitans — Land Intelligence & Verification System** *(Featured)* — Multimodal AI platform for satellite NDVI vegetation analytics, OSM radar, and GDELT risk assessment. [Repo](https://github.com/ajaykumaryadav-collab/credtitans)
+- **More Projects In Active Development** — Autonomous multi-agent systems and robotics control loops.
+
+---
+
+## 💻 Local Development
 
 ```bash
+# Install dependencies
 npm install
+
+# Start the dev server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deployment
+---
 
-Connected to Vercel — every push to `master` triggers an automatic deploy.
+## 📜 License
+
+MIT License © 2026 Ajay Kumar Yadav
