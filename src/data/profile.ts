@@ -8,6 +8,6 @@ export const profileData = {
     email: "mailto:ajaykumaryadav3103@gmail.com",
     phone: "tel:+917718874408",
     resume: "https://github.com/ajaykumaryadav-collab/my-resume",
-    linkedin: "https://linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/ajay-kumar-yadav-ab3942395/",
   },
 };

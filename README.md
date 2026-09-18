@@ -4,6 +4,7 @@ A fast, responsive, and minimalist developer portfolio built with **Next.js 16 (
 Features dark and light themes, smooth animations, and data-driven configuration files.
 
 [![GitHub](https://img.shields.io/badge/GitHub-ajaykumaryadav--collab-blue?logo=github)](https://github.com/ajaykumaryadav-collab)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ajay_Kumar_Yadav-0A66C2?logo=linkedin)](https://www.linkedin.com/in/ajay-kumar-yadav-ab3942395/)
 [![Repository](https://img.shields.io/badge/Repo-portfolio-emerald?logo=github)](https://github.com/ajaykumaryadav-collab/portfolio)
 
 ---
