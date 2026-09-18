@@ -117,10 +117,29 @@ function StandardProjectCard({ project }: { project: Project }) {
 
 function ComingSoonCard() {
   return (
-    <div className="group relative rounded-xl p-6 border-2 border-dashed border-neutral-300 dark:border-neutral-700 flex flex-col items-center justify-center h-full min-h-[180px] text-center transition-all duration-200 hover:border-[var(--color-accent)]">
-      <span className="text-3xl mb-3">🚧</span>
-      <h4 className="text-base font-bold text-neutral-400 dark:text-neutral-500 mb-1">Next Project</h4>
-      <p className="text-xs text-neutral-400 dark:text-neutral-600">Coming soon — stay tuned.</p>
+    <div className="group relative rounded-xl p-8 border-2 border-dashed border-neutral-300 dark:border-neutral-800 flex flex-col items-center justify-center h-full min-h-[220px] text-center transition-all duration-300 hover:border-[var(--color-accent)] bg-neutral-50/50 dark:bg-neutral-900/20 backdrop-blur-sm overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-transparent to-transparent pointer-events-none" />
+      
+      <div className="relative mb-3 flex items-center justify-center">
+        <span className="absolute w-10 h-10 rounded-full animate-ping opacity-20" style={{ background: "var(--color-accent)" }} />
+        <div className="w-10 h-10 rounded-full flex items-center justify-center border"
+          style={{ background: "var(--color-accent-muted)", borderColor: "var(--color-accent)", color: "var(--color-accent)" }}>
+          <span className="text-base">⚡</span>
+        </div>
+      </div>
+
+      <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold uppercase tracking-wider mb-2 border"
+        style={{ color: "var(--color-accent)", borderColor: "var(--color-accent-muted)", background: "var(--color-accent-muted)" }}>
+        <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--color-accent)" }} />
+        More Projects Cooking
+      </div>
+
+      <h4 className="text-base font-bold text-neutral-800 dark:text-neutral-200 mb-1">
+        Autonomous Systems & Multi-Agent Swarms
+      </h4>
+      <p className="text-xs text-neutral-500 dark:text-neutral-400 max-w-xs leading-relaxed">
+        Currently prototyping new AI architectures, vision models, and hardware control loops. Check back regularly or watch my GitHub!
+      </p>
     </div>
   );
 }
@@ -146,7 +165,7 @@ export function Projects() {
               <FeaturedProjectCard key={project.id} project={project} />
             ))}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className={standard.length === 1 ? "max-w-2xl mx-auto w-full" : "grid grid-cols-1 md:grid-cols-2 gap-6"}>
             {standard.map(project =>
               project.status === "Coming Soon" ? (
                 <ComingSoonCard key={project.id} />

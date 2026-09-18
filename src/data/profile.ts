@@ -1,12 +1,13 @@
 export const profileData = {
-  name: "Arush Mehta",
-  role: "CS student @ VIT Vellore",
-  tagline: "Building AI tools & data pipelines",
-  bio: "CS undergrad focused on end-to-end technical pipelines — scripting, API integrations, and applied AI/data projects. Previously interned at Tata Steel IT Application Support (industrial IoT analytics).",
+  name: "Ajay Kumar Yadav",
+  role: "B.Tech CS Undergrad @ VIT Vellore",
+  tagline: "Software Engineer | AI & Full-Stack Systems",
+  bio: "Computer Science undergrad at VIT Vellore passionate about building high-performance, AI-driven applications and robust software systems. I specialize in bridging the gap between intelligent backend pipelines—from speech-to-text and local LLMs to satellite geospatial analytics—and modern, fluid user interfaces. From engineering hands-free voice assistants to hardware-software integration in competitive robotics, I thrive on tackling complex architectural challenges and solving hard engineering problems at scale.",
   links: {
-    github: "https://github.com/doomsday-the",
-    email: "mailto:arushmehta1509@gmail.com",
-    phone: "tel:+917480870348",
-    resume: "https://arush-resume.vercel.app",
+    github: "https://github.com/ajaykumaryadav-collab",
+    email: "mailto:ajaykumaryadav3103@gmail.com",
+    phone: "tel:+917718874408",
+    resume: "https://github.com/ajaykumaryadav-collab/my-resume",
+    linkedin: "https://linkedin.com/",
   },
 };

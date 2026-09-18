@@ -15,52 +15,42 @@ export type Project = {
 
 export const projectsData: Project[] = [
   {
-    id: "tata-steel-analytics",
-    title: "Tata Steel IoT Intelligence Dashboard",
+    id: "project-jarvis",
+    title: "Project JARVIS — Local Voice AI Desktop Assistant",
     status: "Featured",
-    company: "Tata Steel — Summer Internship",
+    company: "Personal Project",
     description:
-      "A full-stack industrial IoT chatbot dashboard for a simulated Tata Steel-like factory environment. Ask natural language questions about welding, gas cutting, and cladding operations — the AI generates SQL, queries the database, and returns a human-friendly answer.",
+      "A fully local, hands-free hybrid AI desktop assistant for Windows 11. Engineered an ultra low-latency multi-stage pipeline combining wake-word detection, CUDA-accelerated speech-to-text, Gemini 2.0 Flash intelligence, and neural TTS to execute system control commands and conversational interactions.",
     problem:
-      "Factory engineers needed real-time, plain-English insights from dense industrial telemetry data — without writing SQL or jumping between dashboards.",
+      "Commercial voice assistants either suffer from high roundtrip cloud latency, invasive privacy concerns, or lack granular system-level operating system controls on Windows.",
     approach:
-      "Built a two-pass Gemini pipeline: the first call translates a natural language question into a safe, read-only SQL query; the second call narrates the raw results into a human-friendly answer. A live KPI dashboard and machine breakdown view sit alongside the chatbot.",
+      "Architected a streaming audio pipeline that runs wake-word inference and CUDA speech transcription locally on the GPU. Delegated conversational reasoning and OS tool-calling to Google Gemini 2.0 Flash, with an offline neural TTS engine for snappy, low-latency audio response.",
     technicalSol:
-      "Next.js 16 (React 19) frontend with a FastAPI + SQLite backend, both deployed as serverless functions on Vercel. Gemini drives NL-to-SQL and result narration. A strict SELECT-only guard prevents mutation. SQL transparency panel lets users inspect every generated query. Animated stat cards, severity-coded deviation table, and quick-action chips complete the UX.",
-    tags: ["Next.js 16", "FastAPI", "SQLite", "Gemini AI", "Python", "Vercel"],
-    githubUrl: "https://github.com/doomsday-the/factory-iot-chatbot",
-    liveUrl: "https://chatbot-frontend-rho-ashen.vercel.app",
+      "Built with Python & PyTorch using openwakeword for 0% cloud wake detection, faster-whisper with FP16 CUDA kernels for sub-300ms speech-to-text, and Google Gemini 2.0 Flash API for intelligent task parsing. Integrated Piper-TTS for natural offline voice synthesis and Win32 APIs for volume, window management, and application launch controls.",
+    tags: ["Python", "faster-whisper", "CUDA", "Gemini 2.0 Flash", "PyTorch", "openwakeword", "piper-tts", "Win32 API"],
+    githubUrl: "https://github.com/ajaykumaryadav-collab/jarvis",
   },
   {
-    id: "pulse-ai-news",
-    title: "Pulse AI — India Edition",
-    status: "Completed",
+    id: "project-credtitans",
+    title: "CredTitans — Land Intelligence & Verification System",
+    status: "Featured",
+    company: "Engineering Hackathon & Research",
     description:
-      "A premium, real-time India-centric tech and business news feed powered by The Guardian Open Platform. Tracks Indian companies (Tata, Reliance, Infosys, Zomato), cities, and topics like ISRO, Fintech & UPI, and AI in India — all contextually scoped so 'AI' returns Indian AI news, not global.",
-    tags: ["Next.js 16", "TypeScript", "The Guardian API", "Vanilla CSS", "Vercel"],
-    githubUrl: "https://github.com/doomsday-the/pules-ai",
-    liveUrl: "https://pulse-ai-khaki.vercel.app",
-  },
-  {
-    id: "project-genesis",
-    title: "Project Genesis",
-    status: "In Progress",
-    description:
-      "An AI-first Personal Media Companion. Instead of a static tracker, it's a conversational AI that remembers your taste, builds a 'Taste DNA' profile, and delivers explainable recommendations — powered by a multi-tiered memory engine and event-sourced architecture.",
+      "An end-to-end, multimodal AI-powered platform for cadastral land intelligence, ecological risk assessment, and legal verification. Integrates satellite imagery (NDVI vegetation index, temporal change detection), OpenStreetMap GIS radar, real-time GDELT risk signals, and Google Gemini AI for contextual due-diligence dossiers and ROI forecasting.",
     problem:
-      "Media tracking apps like MAL and Letterboxd record data, not taste. They can't remember why you rated something, or understand your nuanced, evolving preferences over time.",
+      "Real estate investments and agricultural land acquisitions frequently suffer from fraudulent title deeds, hidden ecological restrictions, unrecorded encroachment, and opaque due-diligence data.",
     approach:
-      "The AI is the OS — it uses tool calling to operate the app (updating ratings, managing lists) while a dedicated Memory Engine with Working, Semantic, and Taste tiers gives it persistent, structured memory across conversations.",
+      "Developed a geospatial intelligence workflow combining optical band satellite telemetry with localized GIS infrastructure scanning, geo-radius conflict detection, and automated LLM-generated valuation & due-diligence audits.",
     technicalSol:
-      "Next.js App Router + Vercel AI SDK for full-stack TypeScript and LLM streaming. PostgreSQL with pgvector for hybrid semantic search. Event sourcing to reconstruct Taste DNA over time. Recommendation engine is algorithmically computed — math and weights, not LLM guesswork.",
-    tags: ["Next.js", "TypeScript", "Vercel AI SDK", "PostgreSQL", "pgvector", "Gemini"],
-    githubUrl: "https://github.com/doomsday-the/Project-Genesis",
+      "FastAPI & Node.js backend pipelines processing Sentinel/Landsat multispectral satellite imagery using OpenCV and PyTorch to compute normalized difference vegetation indices (NDVI) and temporal terrain shifts. Front-end powered by React & Leaflet GIS with radar layers, coupled with GDELT real-time regional threat intelligence and Gemini AI for comprehensive automated due-diligence reports.",
+    tags: ["React 18", "FastAPI", "Python", "PyTorch", "OpenCV", "Leaflet GIS", "Gemini AI", "GDELT", "Node.js"],
+    githubUrl: "https://github.com/ajaykumaryadav-collab/credtitans",
   },
   {
     id: "coming-soon",
-    title: "Coming Soon",
+    title: "Autonomous Agent Orchestration",
     status: "Coming Soon",
-    description: "The next project is in the works. Check back soon.",
-    tags: [],
+    description: "Next-generation multi-agent autonomous framework in active development. Stay tuned.",
+    tags: ["Python", "LLMs", "Vector DBs", "Tool Calling"],
   },
 ];

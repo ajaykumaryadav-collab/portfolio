@@ -10,11 +10,12 @@ export function Navbar() {
         {/* Logo with accent color */}
         <Link href="/" className="font-bold text-lg tracking-tight transition-colors"
           style={{ color: "var(--color-accent)" }}>
-          AM.
+          AY.
         </Link>
         <div className="flex items-center gap-6">
           {[
             { href: "#about", label: "About" },
+            { href: "#experience", label: "Experience" },
             { href: "#projects", label: "Projects" },
             { href: "#skills", label: "Skills" },
             { href: "#contact", label: "Contact" },

@@ -1,14 +1,15 @@
 export const skillsData = {
-  "Languages": ["Python", "Java", "JavaScript", "SQL", "C++", "HTML/CSS"],
-  "Frameworks": ["Next.js", "React", "FastAPI", "Streamlit", "Tailwind CSS"],
-  "Tools": ["Antigravity", "GitHub", "Power BI", "Vercel", "VS Code"],
-  "Data & AI": ["PostgreSQL", "NumPy", "Agentic AI Systems", "Pandas", "SQLite"],
+  "Languages": ["C / C++", "Java", "Python", "JavaScript", "TypeScript", "HTML5", "CSS3", "SQL"],
+  "Frameworks & Web": ["React 19", "Next.js 16", "Node.js", "FastAPI", "Tailwind CSS"],
+  "AI & ML Pipelines": ["Google Gemini 2.0 Flash", "faster-whisper (CUDA)", "piper-tts", "openwakeword", "PyTorch", "OpenCV"],
+  "Geospatial & Tools": ["Leaflet GIS", "GDELT Intelligence", "Git & GitHub", "Vercel", "VS Code", "CUDA"],
+  "Core Computer Science": ["Data Structures & Algorithms", "Object-Oriented Programming", "DBMS", "Operating Systems", "Computer Networks"],
 };
 
 export const currentlyLearning = [
-  "Data Structures & Algorithms",
-  "Database Management Systems",
-  "MongoDB & the MERN Stack",
-  "RAG Pipelines & Vector Search",
-  "AWS Cloud & Deployment",
+  "Autonomous Agent Swarms & Tool Calling",
+  "GPU Kernel Optimization with CUDA & TensorRT",
+  "Geospatial Remote Sensing & Multispectral Band Analysis",
+  "Embedded Robotics Firmware & Real-time Kinematics",
+  "Distributed Microservices & High-Throughput APIs",
 ];

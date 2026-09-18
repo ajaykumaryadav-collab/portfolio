@@ -8,11 +8,12 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Arush Mehta | Portfolio",
-  description: "CS student @ VIT Vellore | Building AI tools & data pipelines",
+  metadataBase: new URL("https://ajaykumaryadav.dev"),
+  title: "Ajay Kumar Yadav | Software Engineer & AI Systems Developer",
+  description: "B.Tech CS Undergrad @ VIT Vellore | Building local AI systems, speech pipelines, robotics & full-stack applications.",
   openGraph: {
-    title: "Arush Mehta | Portfolio",
-    description: "CS student @ VIT Vellore | Building AI tools & data pipelines",
+    title: "Ajay Kumar Yadav | Portfolio",
+    description: "B.Tech CS Undergrad @ VIT Vellore | Building local AI systems, speech pipelines, robotics & full-stack applications.",
     images: [{ url: "/api/placeholder/1200/630" }],
   },
   other: {
