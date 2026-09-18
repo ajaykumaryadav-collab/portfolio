@@ -47,10 +47,19 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/ajaykumaryadav-collab/credtitans",
   },
   {
-    id: "coming-soon",
-    title: "Autonomous Agent Orchestration",
-    status: "Coming Soon",
-    description: "Next-generation multi-agent autonomous framework in active development. Stay tuned.",
-    tags: ["Python", "LLMs", "Vector DBs", "Tool Calling"],
+    id: "project-agent-launchpad",
+    title: "Agent Launchpad — Self-Healing Middleware for AI Agents",
+    status: "Featured",
+    company: "Autonomous AI Systems",
+    description:
+      "An intelligent, self-healing control plane and middleware platform for autonomous AI coding agents. Wraps OpenAI Codex CLI executions with pre-flight prompt safety policies, secret redaction, granular span-level telemetry, and automated workspace rollback/recovery on runtime failure.",
+    problem:
+      "Autonomous coding agents running in real environments frequently cause destructive workspace corruption during hallucinated self-correction loops, risk leaking sensitive credentials (.env, cloud metadata endpoints), operate as opaque black boxes without span observability, and lack zero-overhead safety mechanisms without heavy Kubernetes clusters.",
+    approach:
+      "Designed an additive, decorator-based middleware layer sitting between the orchestrator and execution runners. It enforces pre-execution safety rules, creates atomic workspace snapshots prior to runs, intercepts runtime exceptions to automatically restore clean workspace state, redacts credentials, and streams granular execution traces to an operator evidence dashboard.",
+    technicalSol:
+      "Architected with TypeScript & Node.js 22 using Fastify for high-throughput control plane APIs with timingSafeEqual token authentication. Integrated @openai/codex CLI with streaming NDJSON event parsing across both local processes and disposable Docker/Podman containers. Engineered a custom zero-dependency atomic JSON store with serialized mutation queues, regex-based secret scrubber (redacting API keys and Bearer tokens), automated directory rollback snapshots, and a React 19 monitoring interface with real-time span timelines.",
+    tags: ["TypeScript", "Fastify", "React 19", "OpenAI Codex CLI", "Volcengine Ark", "Docker", "Terraform", "Self-Healing AI"],
+    githubUrl: "https://github.com/ajaykumaryadav-collab/agent-launchpad",
   },
 ];
